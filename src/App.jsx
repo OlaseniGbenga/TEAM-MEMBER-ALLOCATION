@@ -6,6 +6,7 @@ import Footer from './Footer';
 import Employees from './Employees';
 import GroupedTeamMembers from './GroupedTeamMembers';
 import Nav from './Nav';
+import NotFound from './Notfound';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 
 
@@ -137,6 +138,9 @@ useEffect(() => {
          </Route>
            
         <Route path="/GroupedTeamMembers" element = {<GroupedTeamMembers/>}>
+     </Route>
+
+       <Route path="*" element =     {<NotFound/>}>
      </Route>
            
            </Routes>
